@@ -49,7 +49,6 @@ class glx_enum(gl_XML.gl_enum):
 
         self.functions = {}
 
-        child = element.children
         for child in element.getchildren():
             if child.tag == "size":
                 n = child.get( "name" )
